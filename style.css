@@ -8,6 +8,7 @@ body{
     background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 100%;
 }
 .container{
     width: 400px;
@@ -84,5 +85,35 @@ body{
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+@media (max-width:1076px){
+body{
+    overflow: hidden;
+    background-size: 180vh;
+}
+}
+
+@media (max-width:470px) {
+    body{
+        height: 120vh;
+        background-size: 160vh;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:424px){
+    .container{
+        width: 300px;
+    }
+}
+
+@media (max-width:340px){
+    .container{
+        width: 250px;
+    }
+    #imageBox{
+        width: 80%;
     }
 }
